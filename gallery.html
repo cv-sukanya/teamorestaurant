@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Teamo Restaurant - </title>
+    <title>Teamo Restaurant - A Pure Veg Multi-Cuisine Fine-Dine Restaurant in Aurangabad</title>
     <meta name="description" content="TeAmo, Aurangabad's finest vegetarian restaurant, we have strived to create spaces and experiences that celebrate the 'mystical spirit of Love. Be it love for your spouse, for your family or your friends, Te Amo's exclusive offerings will ensure that you will be able to express the spirit of love to the ones who matter to you the most."http-equiv="description" />
     <meta content="" http-equiv="keywords" />
     <meta content="all" http-equiv="robots" />
@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+    <!-- Add Popper.js CDN before Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-30BXWPWGFP"></script>
@@ -61,9 +70,9 @@
             </button>
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="diningDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dinning</a>
                         <div class="dropdown-menu" aria-labelledby="diningDropdown">
@@ -73,7 +82,7 @@
                             <!-- <a class="dropdown-item" href="#">Open to Sky Restaurant</a> -->
                         </div>
                     </li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Banquet Hall</a></li>
+                    <li class="nav-item"><a class="nav-link" href="banquet-hall.html">Banquet Hall</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="menuDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
                         <div class="dropdown-menu" aria-labelledby="menuDropdown">
@@ -83,7 +92,7 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="index.html#blogs">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact us</a></li>
                 </ul>
                 <!-- reservation  -->
@@ -96,123 +105,60 @@
                 <img src="images/Khinvasara-Logo.webp" class="img-fluid" alt="khinvasara">
             </div>
         </div>
-        <!-- <div class="top-head ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-mobil blgds">
-                            <p><i class="fas fa-phone-alt"></i><a href="tel:+91 7588 443703">+91 7588 443703</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </nav>
+    
+    <!-- Add Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Slider -->
-    <div class="banner-header valign bg-img" data-overlay-dark="6" data-background="images/TeAmo-Banquet-bg.webp" style="background-image: url(&quot;img/contact-teamo/Contact-header.webp&quot;);">
+    <!-- <header class="header slider-fade">
+        
+
+    </header> -->
+
+    <section class="gallery-sec">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 caption mt-60">
-                    <h1 style="color: #daae16;">Banquet Hall</h1>
-                    <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li>Banquet</li>
-                    </ul>
-                </div>
-                
+            <h2 class="gallery-title">Our Gallery</h2>
+            <div class="gallery-main">
+                <!-- Vertical and Horizontal Images -->
+                <!-- <div class="gallery-item large"><img src="images/gallery/gallery2.webp" alt="Gallery Image 1"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery2.webp" alt="Gallery Image 2"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery3.webp" alt="Gallery Image 3"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery4.webp" alt="Gallery Image 4"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery5.webp" alt="Gallery Image 5"></div>
+                <div class="gallery-item wide"><img src="images/gallery/gallery6.webp" alt="Gallery Image 6"></div> -->
+
+                <div class="gallery-item"><img src="images/gallery/gallery1.webp" alt="Gallery Image 1" onclick="openModal(0)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery2.webp" alt="Gallery Image 2" onclick="openModal(1)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery3.webp" alt="Gallery Image 3" onclick="openModal(2)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery4.webp" alt="Gallery Image 4" onclick="openModal(3)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery5.webp" alt="Gallery Image 5" onclick="openModal(4)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery6.webp" alt="Gallery Image 6" onclick="openModal(5)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery1.webp" alt="Gallery Image 1" onclick="openModal(0)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery2.webp" alt="Gallery Image 2" onclick="openModal(1)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery3.webp" alt="Gallery Image 3" onclick="openModal(2)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery4.webp" alt="Gallery Image 4" onclick="openModal(3)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery5.webp" alt="Gallery Image 5" onclick="openModal(4)"></div>
+                <div class="gallery-item"><img src="images/gallery/gallery6.webp" alt="Gallery Image 6" onclick="openModal(5)"></div>
+       
             </div>
+
+            
+
         </div>
-    </div>
 
-    <!-- TEAMO -->
-    <section class="section-padding " >
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="images/TeAmo-Banquet-bg.webp" alt="Banquet Hall">
-                </div> 
-                <div class="col-md-6"> 
-                    <div class="blogs-sect">
-                        <h2 style="color: #daae16;">Versatile Banquet Halls, <br> Choose Your Space</h2>
-
-                        <p>Welcome to Te Amo Banquet Hall, where every celebration finds its perfect setting! 
-                            Immerse yourself in the luxury of our fully air-conditioned hall, offering a serene 
-                            ambiance that caters to gatherings of 150 or more. 
-                            Experience the convenience of our 
-                            separate function hall and dining/buffet area, ensuring a seamless flow for your event. 
-                            Get ready in style with our two well-appointed changing rooms. 
-                            Parking is a breeze with our ample space and valet facility, while two lifts provide 
-                            easy access for all. At Te Amo, we don't just host events; we craft unforgettable experiences. 
-                            Your journey begins with us—where elegance meets convenience, and celebrations find their perfect stage.
-                        </p>
-
-                        <!-- <p>Welcome to Te Amo, where <b>dining</b> transcends mere sustenance and transforms into an unforgettable experience. Nestled in the heart of Aurangabad, Te Amo is not just a restaurant; it's a sanctuary for lovers of fine vegetarian cuisine. Step into a world where every detail, from the décor to the atmosphere, is meticulously crafted to enchant your senses and elevate your <b>dining</b> experience to new heights.
-                        </p> 
-
-                        <h4>Pure Veg Fine-Dine Restaurant</h4>
-                        <p>As a premier pure vegetarian fine-dining establishment in Aurangabad, Te Amo takes pride in offering a gastronomic journey like no other. Te Amo’s menu is a symphony of flavors, showcasing the finest ingredients sourced from local markets and organic farms. From traditional Indian delicacies to global fusion creations, each dish is a masterpiece crafted with passion and precision.</p>
-
-                        <h4>Indoor AC Dining For Cozy Comfort</h4>
-                        <p>Step inside the cozy indoor <b>dining</b> area and escape the hustle and bustle of the outside world. With ambient lighting, plush seating, and a welcoming atmosphere, the indoor <b>dining</b> space is the perfect setting for intimate dinners, family gatherings, or celebrations with friends. Relax in air-conditioned comfort as you savor every bite of this delectable vegetarian delight. Te Amo is a family restaurant for every small and big celebration.</p>
-
-                        <h4>Open Dining Area Amidst The Stars</h4>
-                        <p>For those who prefer <b>dining</b> under the open sky, the outdoor seating area offers a magical experience amidst the stars. Surrounded by lush greenery and twinkling lights, the open-air <b>dining</b> space exudes romance and charm at the best veg restaurant in Aurangabad. Whether you're enjoying a candlelit dinner with your significant other or catching up with friends under the night sky, every moment at Te Amo is infused with enchantment.</p>
-
-                        <h4>The Art of Romance: Creating Magical Moments in Rooftop Cabanas</h4>
-                        <p>Elevate your <b>dining</b> experience to new heights in the rooftop cabanas, where romance meets luxury. Nestled atop the restaurant, the private cabanas offer unparalleled views of the city skyline, creating a romantic ambiance that's perfect for special occasions or intimate dinners making Te Amo the best restaurant in Aurangabad. Indulge in a culinary journey curated just for you as you create cherished memories under the starlit sky.</p>
-                        <p>Te Amo understands that <b>dining</b> is not just about the food but the entire experience. That's why they've created a space where every moment is filled with warmth, elegance, and unparalleled hospitality. Whether you're a connoisseur of vegetarian cuisine or simply seeking a memorable <b>dining</b> experience, Te Amo pure veg restaurant welcomes you with open arms.</p>
-                     -->
-                    </div>
-                </div>
-                
-            </div>
-        </div>
     </section>
 
-    <section class="banquet-gallery">
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <img src="images/banquet-hall-1.jpg" alt="Image 1" class="carousel-image">
-                <img src="images/banquet-hall-2.jpg" alt="Image 2" class="carousel-image">
-                <img src="images/banquet-hall-3.jpg" alt="Image 3" class="carousel-image">
-                <img src="images/banquet-hall-1.jpg" alt="Image 4" class="carousel-image">
-                <img src="images/banquet-hall-2.jpg" alt="Image 5" class="carousel-image">
-                <img src="images/banquet-hall-3.jpg" alt="Image 6" class="carousel-image">
-                <img src="images/TeAmo-Banquet-bg.webp" alt="Image 7" class="carousel-image">
-                <img src="images/TeAmo-Banquet-bg.webp" alt="Image 8" class="carousel-image">
-                <img src="images/TeAmo-Banquet-bg.webp" alt="Image 9" class="carousel-image">
-                <img src="images/TeAmo-Banquet-bg.webp" alt="Image 10" class="carousel-image">
-                <!-- Add more images as needed -->
-            </div>
-            <!-- Navigation buttons -->
-            <button class="carousel-btn prev">‹</button>
-            <button class="carousel-btn next">›</button>
+    <div id="modal" class="modal-gallery">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Full view image">
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
-    </section>
-
-    <!-- Lightbox for full view -->
-    <div class="lightbox" id="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-image" id="lightboxImage" src="" alt="Full View">
     </div>
-    
-    
-    
-    
-    
-     
-    <!-- <section class="home-map">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <iframe class="gmap_iframe" width='100%' height='450vh' frameborder="0" scrolling="no"
-                        marginheight="0" marginwidth="0"
-                        src="https://www.google.com/maps/embed/v1/place?q=TeAmo+Restaurant,+Jalna+Road,+Opposite+Akashwani,+Kailash+Nagar,+Mondha,+Aurangabad,+Maharashtra,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+   
     <!-- whatsapp -->
     <a href="https://wa.me/+917588443703" class="float-what" target="_blank">
         <i class="fab fa-whatsapp my-float"></i> 
@@ -262,25 +208,25 @@
                     <div class="col-md-2 ">
                         <div class="foots-sec">
                             <ul>
-                                <li><a href="index.html#home">Home</a></li>
-                                <li><a href="index.html#about">About us</a></li>
-                                <li><a href="index.html#segment">Segments</a></li>
-                                <li><a href="index.html#menu">Menu</a></li> 
-                                <li><a href="index.html#blogs">Blogs</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#segment">Segments</a></li>
+                                <li><a href="#menu">Menu</a></li> 
+                                <li><a href="#blogs">Blogs</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="foots-sec">
                             <ul> 
-                                <li><a href="index.html#testimonials">Testimonials</a></li>
-                                <li><a href="index.html#gallery">Galley</a></li>
-                                <li><a href="index.html#events">Events</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
+                                <li><a href="#gallery">Galley</a></li>
+                                <li><a href="#events">Events</a></li>
                                 <li><a href="faqs.html">Faq's</a></li>
-                                <li><a href="index.html#contact">Contact us</a></li>
+                                <li><a href="#contact">Contact us</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> 
                     <div class="col-md-5">
                         <div class="footer-column footer-explore clearfix"> 
                             <div class="row align-items-center">
@@ -385,22 +331,22 @@
                             <div class="">
                                 <div class="foots-sec">
                                     <ul>
-                                        <li><a href="index.html#home">Home</a></li>
-                                        <li><a href="index.html#about">About us</a></li>
-                                        <li><a href="index.html#segment">Segments</a></li>
-                                        <li><a href="index.html#menu">Menu</a></li> 
-                                        <li><a href="index.html#blogs">Blogs</a></li>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About us</a></li>
+                                        <li><a href="#segment">Segments</a></li>
+                                        <li><a href="#menu">Menu</a></li> 
+                                        <li><a href="#blogs">Blogs</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="">
                                 <div class="foots-sec">
                                     <ul>  
-                                        <li><a href="index.html#testimonials">Testimonials</a></li>
-                                        <li><a href="index.html#gallery">Galley</a></li>
-                                        <li><a href="index.html#events">Events</a></li>
+                                        <li><a href="#testimonials">Testimonials</a></li>
+                                        <li><a href="#gallery">Galley</a></li>
+                                        <li><a href="#events">Events</a></li>
                                         <li><a href="faqs.html">Faq's</a></li>
-                                        <li><a href="index.html#contact">Contact us</a></li>
+                                        <li><a href="#contact">Contact us</a></li>
                                     </ul>
                                 </div>
                             </div> 
@@ -478,97 +424,64 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- <script src="js/jquery-migrate-3.0.0.min.js"></script> -->
-    <!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
-    <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
-    <!-- <script src="js/jquery.isotope.v3.0.2.js"></script> -->
-    <!-- <script src="js/pace.js"></script> -->
-    <!-- <script src="js/popper.min.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Popper.js (required for Bootstrap dropdowns) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Additional Scripts -->
     <script src="js/scrollIt.min.js"></script>
-    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
     <script src="js/owl.carousel.min.js"></script>
-    <!-- <script src="js/jquery.stellar.min.js"></script> -->
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/YouTubePopUp.js"></script>
-    <!-- <script src="js/select2.js"></script> -->
-    <!-- <script src="js/datepicker.js"></script> -->
-    <!-- <script src="js/smooth-scroll.min.js"></script> -->
     <script src="js/custom.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    
+
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const track = document.querySelector('.carousel-track');
-            const images = Array.from(track.children);
-            const nextButton = document.querySelector('.carousel-btn.next');
-            const prevButton = document.querySelector('.carousel-btn.prev');
-            let index = 0;
-            const intervalTime = 3000; // 3 seconds for automatic slide
-            let interval;
-        
-            function updateCarousel() {
-                const slideWidth = images[0].getBoundingClientRect().width;
-                track.style.transform = `translateX(-${index * slideWidth}px)`;
-            }
-        
-            function moveToNextSlide() {
-                index = (index + 1) % images.length;
-                updateCarousel();
-            }
-        
-            function moveToPrevSlide() {
-                index = (index - 1 + images.length) % images.length;
-                updateCarousel();
-            }
-        
-            nextButton.addEventListener('click', moveToNextSlide);
-            prevButton.addEventListener('click', moveToPrevSlide);
-        
-            function startAutoSlide() {
-                interval = setInterval(moveToNextSlide, intervalTime);
-            }
-        
-            function stopAutoSlide() {
-                clearInterval(interval);
-            }
-        
-            startAutoSlide();
-        
-            // Stop auto-slide when hovering over the carousel
-            track.addEventListener('mouseenter', stopAutoSlide);
-            track.addEventListener('mouseleave', startAutoSlide);
-        });
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            const track = document.querySelector('.carousel-track');
-            const images = Array.from(track.children);
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightboxImage');
-            const closeLightbox = document.querySelector('.close-lightbox');
-        
-            // Open lightbox when clicking on an image
-            images.forEach(img => {
-                img.addEventListener('click', function() {
-                    lightboxImage.src = img.src; // Set clicked image as lightbox image
-                    lightbox.style.display = 'flex'; // Show lightbox
-                });
-            });
-        
-            // Close lightbox when clicking the close button or outside the image
-            closeLightbox.addEventListener('click', function() {
-                lightbox.style.display = 'none';
-            });
-        
-            lightbox.addEventListener('click', function(e) {
-                if (e.target === lightbox || e.target === closeLightbox) {
-                    lightbox.style.display = 'none';
-                }
-            });
-        });
-        
+        // Array to hold the image sources
+        const images = [
+        'images/gallery/gallery1.webp',
+        'images/gallery/gallery2.webp',
+        'images/gallery/gallery3.webp',
+        'images/gallery/gallery4.webp',
+        'images/gallery/gallery5.webp',
+        'images/gallery/gallery6.webp'
+        ];
+
+        let currentSlide = 0;
+
+        function openModal(index) {
+        document.getElementById('modal').style.display = 'flex';
+        showSlide(index);
+        }
+
+        function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+        }
+
+        function showSlide(index) {
+        currentSlide = index;
+        const modalImage = document.getElementById('modal-image');
+        modalImage.src = images[currentSlide];
+        }
+
+        function changeSlide(direction) {
+        currentSlide += direction;
+        if (currentSlide < 0) {
+            currentSlide = images.length - 1;
+        } else if (currentSlide >= images.length) {
+            currentSlide = 0;
+        }
+        showSlide(currentSlide);
+        }
 
     </script>
+
+  
 </body>
 
 </html>

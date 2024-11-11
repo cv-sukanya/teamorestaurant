@@ -82,7 +82,7 @@
                             <!-- <a class="dropdown-item" href="#">Open to Sky Restaurant</a> -->
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Banquet Hall</a></li>
+                    <li class="nav-item"><a class="nav-link" href="banquet-hall.html">Banquet Hall</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="menuDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
                         <div class="dropdown-menu" aria-labelledby="menuDropdown">
@@ -92,7 +92,7 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="index.html#blogs">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact us</a></li>
                 </ul>
                 <!-- reservation  -->
@@ -602,7 +602,7 @@
                             easy access for all. At Te Amo, we don't just host events; we craft unforgettable experiences. 
                             Your journey begins with us—where elegance meets convenience, and celebrations find their perfect stage. -->
                         </p>
-                        <a href="#" class="button-1 mt-10">View</a>
+                        <a href="banquet-hall.html" class="button-1 mt-10">View</a>
                     </div>
                 </div>
             </div>
@@ -697,7 +697,7 @@
         </div>
     </section>
 
-    <section class="chef-recommends section-padding chefs-bg">
+    <!-- <section class="chef-recommends section-padding chefs-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -714,7 +714,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>  -->
 
 
     <!-- Faqs -->
@@ -737,7 +737,7 @@
         </div>
     </section> -->
 
-    <section class="chef-recommends section-padding coffee-bg">
+    <!-- <section class="chef-recommends section-padding coffee-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -753,7 +753,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- <section class="chef-recommends section-padding coffee-bg">
         <div class="container">
@@ -925,7 +925,7 @@
             </div>
             <div class="main">
                 <div class="container"> 
-                    <div class="owl-carousel owl-theme">
+                    <!-- <div class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="card">
                                 <div class="card-image">
@@ -981,7 +981,7 @@
                             </div>  
                         </div>
                          
-                    </div>
+                    </div> -->
                      
                     <!-- <div class="card">
                         <div class="card-image">
@@ -1018,10 +1018,24 @@
                             </a>
                         </div>
                     </div>  -->
-                    
 
+
+                    <div class="gallery">
+                        <div class="gallery-item"><img src="images/gallery/gallery2.webp" alt="Image 1"></div>
+                        <div class="gallery-item"><img src="images/gallery/gallery3.webp" alt="Image 2"></div>
+                        <div class="gallery-item"><img src="images/gallery/gallery4.webp" alt="Image 3"></div>
+                        <div class="gallery-item"><img src="images/gallery/gallery2.webp" alt="Image 4"></div>
+                        <div class="gallery-item"><img src="images/gallery/gallery2.webp" alt="Image 5"></div>
+                        <div class="gallery-item"><img src="images/gallery/gallery2.webp" alt="Image 6"></div>
+                    </div>
+                    <div class="more-btn">
+                        <button class="btn gallery-btn"><a href="gallery.html">Visit Gallery</a></button>
+                    </div>
                     
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <button class="next" onclick="nextImage()">&#10095;</button>
                 
+                  
                 </div>
             </div>
         </div>
@@ -1571,7 +1585,33 @@
     <script src="js/custom.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+    <script>
+        let currentImageIndex = 0;
+        const galleryItems = document.querySelectorAll(".gallery-item");
 
+        function showImage(index) {
+            galleryItems.forEach((item, i) => {
+                item.classList.remove("active");
+                if (i === index) {
+                    item.classList.add("active");
+                }
+            });
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+            showImage(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+            showImage(currentImageIndex);
+        }
+
+        // Initialize the first image
+        showImage(currentImageIndex);
+
+    </script>
 
   
 </body>
