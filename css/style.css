@@ -9984,3 +9984,209 @@ button.prev, button.next {
   }
  
 }
+
+
+
+
+/* Menu */
+.menu {
+    padding: 20px;
+    margin: 50px 0;
+}
+
+.menu .container {
+    max-width: 1200px;
+    margin: auto;
+}
+.menu .container .menu-head h3{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.menu .menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-col {
+    flex: 1 1 calc(25% - 20px); /* 4 columns on desktop */
+    max-width: calc(25% - 20px);
+}
+
+
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu-item p {
+    padding: 10px;
+    font-size: 16px;
+    
+}
+.menu-item p a{
+    color: #333;
+    font-weight: 600;
+}
+.menu-item p a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* Hover Effect */
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .menu-col {
+        flex: 1 1 calc(33.33% - 20px); /* 3 columns on tablets */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-col {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on small tablets */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-col {
+        flex: 1 1 100%; /* 1 column on mobile */
+        max-width: 100%;
+    }
+    .menu .container .menu-head h3{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+}
+
+
+
+
+/* Single Menu */
+
+.menu-page {
+    width: 1000px;
+    height: 750px;
+    position: relative;
+    margin: 200px;
+    z-index: 100;
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.page {
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: transform;
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	-webkit-transform-origin: left center;
+	transform-origin: left center;
+}
+
+#first,
+#first .back {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+#first {
+    z-index: 102;
+}
+#second {
+    z-index: 103;
+    transition: transform 0.8s ease-in-out;
+}
+#third .content {
+    width: 400px;
+}
+#fourth {
+    z-index: 101;
+}
+
+.page > div,
+.outer,
+.content,
+.helper-class-to-make-bug-visbile {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.page > div {
+	width: 100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.back {
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+.outer {
+	width: 100%;
+	overflow: hidden;
+    z-index: 999;
+}
+
+/* problematic class: `.content` */
+.content {
+    width: 200%;
+    background: #f6f6f6;
+}
+
+
+.front .content {
+	left: -100%;
+}
+
+
+
+/* controls */
+#prev, #next {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 999;
+}
+#prev:hover, #next:hover {
+    background: rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+#prev {
+    top: 0;
+    left: 0;
+}
+#next {
+    top: 0;
+    left: 50%;
+}
